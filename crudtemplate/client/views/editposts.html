@@ -1,0 +1,10 @@
+<template name="editposts">
+	<div class="container">
+		{{>navigation}}
+		{{#each posts}}
+			<div class="row">
+				{{{form collection "edit" this}}}
+			</div>
+		{{/each}}
+	</div>
+</template>
