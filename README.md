@@ -11,7 +11,7 @@ WORKS WITH THE AUTH BRANCH
 
 ##How to create a models
 
-   {
+    {
         "posts" :{
             "title" : {"required" : true,"type" : "string","max" : "128","min":"2"},
             "description" : {"required":false,"type" : "string" , "max":"512"},
