@@ -12,19 +12,19 @@ WORKS WITH THE AUTH BRANCH
 ##How to create a models
 
    {
-	"posts" :{
-		 "title" : {"required" : true,"type" : "string","max" : "128","min":"2"},
-		"description" : {"required":false,"type" : "string" , "max":"512"},
-		"content" : {"required" : true, "type" : "string","max":"1000000"},
-		"comments" : {"required":false,"type" :"subDocuments","subDocuments":{
-			"name" : {"required" : true,"type":"string"},
-			"text" : {"required" : true,"type":"string"}
-		}}
-	},
-	"pages" :{
-		"title" : {"required" : true,"type" : "string","max" : "128","min":"2"},
-		"content" : {"required" : true, "type" : "string","max":"1000000"},
-		"date" : {"required" : true, "type" : "date"},
-		"likes" : {"required" : true, "type" : "number","min":"5","max":"1500"}
-	}
-   }
+        "posts" :{
+            "title" : {"required" : true,"type" : "string","max" : "128","min":"2"},
+            "description" : {"required":false,"type" : "string" , "max":"512"},
+            "content" : {"required" : true, "type" : "string","max":"1000000"},
+            "comments" : {"required":false,"type" :"subDocuments","subDocuments":{
+                "name" : {"required" : true,"type":"string"},
+                "text" : {"required" : true,"type":"string"}
+            }}
+        },
+        "pages" :{
+            "title" : {"required" : true,"type" : "string","max" : "128","min":"2"},
+            "content" : {"required" : true, "type" : "string","max":"1000000"},
+            "date" : {"required" : true, "type" : "date"},
+            "likes" : {"required" : true, "type" : "number","min":"5","max":"1500"}
+        }
+    }
