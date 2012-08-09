@@ -7,7 +7,7 @@ WORKS WITH THE AUTH BRANCH
 
     git clone https://github.com/lvbreda/meteor_impact.git 
     //create models like explained below
-    node meteor_impact/create.js project path_to_models
+    node meteor_impact/create.js project absolute_path_to_models
 
 ##How to create a models
 
