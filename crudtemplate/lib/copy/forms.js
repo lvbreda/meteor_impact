@@ -137,7 +137,6 @@ Handlebars.registerHelper("form", function(collection,type,selected) {
 var FormElementsCreate = {
 	"string" : function(item,rules,selected){
 		var retvalue="";
-		
 		if((rules.max && rules.max<=130) ||!rules.max){
 			var value = (selected && selected[item])?'value="' + selected[item] + '" ':'';
 			retvalue = '<input type="text" name= "'+item + '" id= "'+item + '" class="input-xlarge" data-check=\'' + JSON.stringify(rules) + '\' '+value+'/>' ;

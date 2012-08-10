@@ -42,10 +42,17 @@ Meteor.validators = {
 				}
 			}
 		}else{
+
 			rule=(rule=="date")?"string":rule;
 			if(rule != (typeof document)){
 				throw new Meteor.Error(500, "This field needs to be a " + rule);
 				return false;
+			}
+			if(allRules.regex){
+				if(allRules.regex.test(document)){
+					throw new Meteor.Error(500, "This field contains illegal characters or is in the wrong format");
+					return false;
+				}
 			}
 		}
 		return true;
